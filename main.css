@@ -10,9 +10,11 @@
 }
 nav {
     background: orange;
+    margin
 }
 nav a {
     font-family: sans-serif;
     text-decoration: none;
     color: white;
+    padding-right: 20px;
 }
