@@ -2,19 +2,56 @@
     display:flex;
     justify-content: space-between;
 }
-
 .pagetop h1 {
     font-family: sans-serif;
     margin: 12px;
     font-size: 35px;
 }
-nav {
+.navbar {
+    list-style: none;
+    margin:0;
+
     background: orange;
-    margin
+
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
 }
-nav a {
+.navbar a {
     font-family: sans-serif;
     text-decoration: none;
+    display: block;
+    padding: 1em;
     color: white;
-    padding-right: 20px;
 }
+
+.navbar a:hover {
+    background: darken(orange, 40%);
+}
+
+@media all and (max-width: 800px) {
+    .navbar {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navbar {
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    
+    .navbar a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255,255,255,0.3); 
+      border-bottom: 1px solid rgba(0,0,0,0.1); 
+    }
+  
+    
+    .navbar li:last-of-type a {
+      border-bottom: none;
+    }
+  }
