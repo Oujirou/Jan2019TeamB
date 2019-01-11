@@ -56,23 +56,6 @@
     }
   }
 
-  .wrapper {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-flow: wrap;
+  p {
+      float: left; 
   }
-
-  .textbox p{
-    border: black;
-    border-radius: 20%;
-    background: lightgrey;
-    height: 200px;
-    width: 200px;
-    line-height: 200px;
-  }
-
-  .textbox {
-      display: block;
-      text-align: center; 
-    }
