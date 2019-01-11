@@ -55,3 +55,7 @@
       border-bottom: none;
     }
   }
+
+  p {
+      float: left;
+  }
