@@ -55,3 +55,26 @@
       border-bottom: none;
     }
   }
+
+  .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-flow: wrap;
+  }
+
+  .textbox h1 {
+      font-family: arial;
+      font-size: 20px;
+  }
+
+  .textbox {
+      border-left-color: black;
+      border-left-style: solid;
+      margin-left: 20px;
+      margin-top: 10px;
+  }
+
+  .nestedtext {
+      margin-left: 20px;
+  }
